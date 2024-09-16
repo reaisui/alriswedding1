@@ -74,18 +74,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Disqus integration
-var disqus_config = function () {
-  this.page.url = window.location.href;
-  this.page.identifier = window.location.pathname;
-};
-
-(function() {
-  var d = document, s = d.createElement('script');
-  s.src = 'https://yourdisqusshortname.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-})();
 
 // Text animation in footer
 const textElement = document.getElementById('animated-text');
