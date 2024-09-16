@@ -113,24 +113,21 @@
 
     <script src="script.js"></script>
     <div id="disqus_thread"></div>
-    <script>
-        var disqus_config = function () {
-            this.page.url = window.location.href;  // Menggunakan URL halaman saat ini sebagai URL kanonik
-            this.page.identifier = window.location.pathname; // Menggunakan path URL sebagai identifier halaman
-        };
-    
-        (function() { // Jangan mengedit bagian di bawah ini
-            var d = document, s = d.createElement('script');
-            s.src = 'https://weding4.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    
-    <noscript>
-        Please enable JavaScript to view the 
-        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-    </noscript>
-    
+   <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://reaisui.github.io/alriswedding1/';  // URL halaman
+        this.page.identifier = 'wedding_page'; // Identifier unik
+    };
+
+    (function() {  // Kode untuk memuat Disqus
+        var d = document, s = d.createElement('script');
+        s.src = 'https://NAMA_SITUS.disqus.com/embed.js';  // Ganti NAMA_SITUS dengan nama situs Disqus Anda
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Silakan aktifkan JavaScript untuk melihat <a href="https://disqus.com/?ref_noscript">komentar yang didukung oleh Disqus.</a></noscript>
+
 </body>
 </html>
